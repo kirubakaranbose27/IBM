@@ -1,0 +1,28 @@
+{
+  "1025": {
+    "customer": "Asha Menon",
+    "status": "Shipped",
+    "eta": "2026-09-14",
+    "items": [
+      { "name": "Wireless Mouse", "price": 799.0, "qty": 1 },
+      { "name": "USB-C Cable", "price": 299.0, "qty": 2 }
+    ]
+  },
+  "1042": {
+    "customer": "Ravi Kumar",
+    "status": "Processing",
+    "eta": "2026-09-18",
+    "items": [
+      { "name": "Mechanical Keyboard", "price": 3499.0, "qty": 1 }
+    ]
+  },
+  "1088": {
+    "customer": "Priya Sharma",
+    "status": "Delivered",
+    "eta": "2026-09-05",
+    "items": [
+      { "name": "Laptop Stand", "price": 1299.0, "qty": 1 },
+      { "name": "HDMI Cable", "price": 399.0, "qty": 1 }
+    ]
+  }
+}

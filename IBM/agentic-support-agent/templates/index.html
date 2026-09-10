@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support Agent Console</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="console">
+    <header class="console__header">
+      <div class="console__title">
+        <span class="console__mark">◆</span>
+        <div>
+          <h1>Support Desk</h1>
+          <p>Agentic AI demo — order lookup, calculator, weather tools</p>
+        </div>
+      </div>
+      <button id="reset-btn" class="btn-ghost">New conversation</button>
+    </header>
+
+    <main class="console__body">
+      <section class="chat" id="chat">
+        <div class="msg msg--agent">
+          <div class="msg__label">Agent</div>
+          <div class="msg__bubble">
+            Hi, I'm your support agent. Try asking me things like:
+            <ul>
+              <li>"Check order 1025 and tell me the total"</li>
+              <li>"What's the status of order 1042?"</li>
+              <li>"What's the weather in Chennai?"</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <aside class="trace" id="trace">
+        <h2>Agent trace</h2>
+        <p class="trace__hint">Tool calls the agent makes will appear here, in order.</p>
+        <div id="trace-list"></div>
+      </aside>
+    </main>
+
+    <form id="chat-form" class="composer">
+      <input
+        id="chat-input"
+        type="text"
+        autocomplete="off"
+        placeholder="Ask about an order, a total, or the weather…"
+        required
+      />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>
